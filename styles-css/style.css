@@ -391,8 +391,14 @@ a {
 .teammetes-networks-link:hover,
 .teammetes-networks-link:focus {
   background-color: var(--link-hover-text-color);
-  --color4: var(--footer-address-hover);
 }
+.teammetes-svg{
+  transition: fill var(--global-animation);
+  fill: #afb1b8;
+}
+ .teammetes-networks-link:hover .teammetes-svg,
+ .teammetes-networks-link:focus .teammetes-svg {
+  fill: var(--footer-address-hover);}
 
 /*  */
 /* regular-customers */
@@ -456,8 +462,6 @@ fill: #afb1b8;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  /* identical to box height */
-
   letter-spacing: 0.03em;
 }
 
@@ -544,7 +548,7 @@ fill: #afb1b8;
 }
 
 .footer-networks-svg {
-  --color4: var(--footer-address-hover);
+  fill: var(--footer-address-hover);
 }
 
 
